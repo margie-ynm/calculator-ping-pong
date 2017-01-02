@@ -7,7 +7,7 @@ $(document).ready(function() {
     var simpleCalculator = new Calculator("green");
     var output = simpleCalculator.pingPong(goal);
     output.forEach(function(element) {
-      $('#solution').append("<li>" + element + "</li>")
+      $('#solution').append("<li>" + element + "</li>");
     });
   });
 });

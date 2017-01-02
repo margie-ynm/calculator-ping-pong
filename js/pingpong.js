@@ -1,6 +1,6 @@
 
 function Calculator(skinName){
-  this.skin = skinName
+  this.skin = skinName;
 }
 
 Calculator.prototype.pingPong = function(goal) {
@@ -11,12 +11,32 @@ Calculator.prototype.pingPong = function(goal) {
     } else if (i % 3 === 0) {
       output.push("ping");
     } else if (i % 5 === 0) {
-      output.push("pong")
+      output.push("pong");
     } else {
       output.push(i);
     }
   }
   return output;
-}
+};
+
+Calculator.prototype.addNumbers = function (firstNum, secondNum) {
+  var output = firstNum + secondNum;
+  return output;
+};
+
+Calculator.prototype.subNumbers = function (firstNum, secondNum) {
+  var output = firstNum - secondNum;
+  return output;
+};
+
+Calculator.prototype.divideNumbers = function (firstNum, secondNum) {
+  var output = firstNum / secondNum;
+  return output;
+};
+
+Calculator.prototype.multiplyNumbers = function (firstNum, secondNum) {
+  var output = firstNum * secondNum;
+  return output;
+};
 
 exports.calculatorModule = Calculator;
